@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="editUser">
-    <div class="container mt-5">
+    <div class="card">
     <h2 class="mb-4">Editar dados do cliente</h2>
 
     <div class="form-group">
