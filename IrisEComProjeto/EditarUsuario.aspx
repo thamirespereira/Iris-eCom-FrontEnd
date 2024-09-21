@@ -15,65 +15,66 @@
 
     <div class="form-group">
         <label for="id">ID:</label>
-        <input type="number" id="id" name="id" class="form-control"/><br/><br/>
+        <input type="number" id="id" name="id" class="form-control"/>
     </div>
     <div class="form-group">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" class="form-control"/><br/><br/>
+        <input type="text" id="nome" name="nome" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="form-control"/><br/><br/>
+        <input type="email" id="email" name="email" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" class="form-control"/><br/><br/>
+        <input type="password" id="senha" name="senha" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" class="form-control"/><br/><br/>
+        <input type="text" id="cep" name="cep" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="endereco">Endereco:</label>
-        <input type="text" id="endereco" name="endereco" class="form-control"/><br/><br/>
+        <input type="text" id="endereco" name="endereco" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="bairro">Bairro:</label>
-        <input type="text" id="bairro" name="bairro" class="form-control"/><br/><br/>
+        <input type="text" id="bairro" name="bairro" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" class="form-control"/><br/><br/>
+        <input type="text" id="cidade" name="cidade" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="uf">UF:</label>
-        <input type="text" id="uf" name="uf" class="form-control"/><br/><br//>
+        <input type="text" id="uf" name="uf" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" class="form-control"/><br/><br/>
+        <input type="text" id="cpf" name="cpf" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="dataNascimento">Data de Nascimento:</label>
-        <input type="date" id="dataNascimento" name="dataNascimento" class="form-control"/><br/><br/>
+        <input type="date" id="dataNascimento" name="dataNascimento" class="form-control"/>
     </div>
 
     <div class="form-group">
         <label for="imagem">Imagem:</label>
-        <input type="text" id="imagem" name="imagem" class="form-control"/><br/><br/>
+        <input type="text" id="imagem" name="imagem" class="form-control"/>
     </div>
 
-    <button id="btnVoltar" type="button" class=" btn btn-primary btn-block">Voltar</button>
     <button id="button" type="submit" class="btn btn-primary btn-block">Salvar</button>
+    <button id="btn-voltar" type="button" class=" btn btn-primary btn-block">Voltar</button>
+
     </div>
 
                <!-- Conexão com a api -->
@@ -132,8 +133,8 @@
                     console.error('Erro ao editar usuário:', error);
                 });
         });
-        document.getElementById('btnVoltar').addEventListener('click', function () {
-            window.location.href = 'Usuarios.aspx';
+        document.getElementById('btn-voltar').addEventListener('click', function () {
+            window.history.back();
         });
     });
 
