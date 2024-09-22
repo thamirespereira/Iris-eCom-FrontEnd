@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
-    <title></title>
+    <title>Cadastro Produto</title>
 </head>
 <body>
     <form id="cadProduto"> 
@@ -70,6 +70,7 @@
                     data: JSON.stringify(produto),
                     success: function (response) {
                         alert('Produto cadastrado com sucesso!');
+                        window.location.href = 'Default.aspx';
                     },
                     error: function (error) {
                         console.error('Erro ao cadastrar o produto:', error);

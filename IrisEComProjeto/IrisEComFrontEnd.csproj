@@ -211,7 +211,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="CadCategoria.aspx" />
     <Content Include="CadProduto.aspx" />
+    <Content Include="Categoria.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -232,6 +234,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="CSS\StyleSheet.css" />
     <Content Include="Default.aspx" />
+    <Content Include="EditarCategoria.aspx" />
     <Content Include="EditarProduto.aspx" />
     <Content Include="EditarUsuario.aspx" />
     <Content Include="favicon.ico" />
@@ -310,12 +313,26 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CadCategoria.aspx.cs">
+      <DependentUpon>CadCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadCategoria.aspx.designer.cs">
+      <DependentUpon>CadCategoria.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CadProduto.aspx.cs">
       <DependentUpon>CadProduto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CadProduto.aspx.designer.cs">
       <DependentUpon>CadProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria.aspx.cs">
+      <DependentUpon>Categoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categoria.aspx.designer.cs">
+      <DependentUpon>Categoria.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -330,6 +347,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCategoria.aspx.cs">
+      <DependentUpon>EditarCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarCategoria.aspx.designer.cs">
+      <DependentUpon>EditarCategoria.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditarProduto.aspx.cs">
       <DependentUpon>EditarProduto.aspx</DependentUpon>

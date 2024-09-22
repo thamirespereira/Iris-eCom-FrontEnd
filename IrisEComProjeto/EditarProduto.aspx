@@ -84,6 +84,7 @@
             data: JSON.stringify(produtoAtualizado),
             success: function (response) {
                 alert('Produto atualizado com sucesso!');
+                window.location.href = 'Default.aspx';
             },
             error: function (error) {
                 console.error('Erro ao atualizar o produto:', error);

@@ -77,6 +77,7 @@
                          }
                          $(this).closest('tr').remove();
                          alert('Usuário excluído com sucesso!');
+                         window.location.href = 'Default.aspx';
                      })
                      .catch(error => {
                          console.error('Erro ao excluir usuário:', error);

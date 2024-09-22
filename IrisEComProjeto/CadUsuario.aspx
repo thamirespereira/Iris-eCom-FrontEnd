@@ -124,6 +124,7 @@
                 .then(data => {
                     console.log('Requisição bem-sucedida:', data);
                     alert('Usuário adicionado com sucesso!');
+                    window.location.href = 'Default.aspx';
                 })
                 .catch(error => {
                     console.error('Erro ao adicionar usuário:', error);
