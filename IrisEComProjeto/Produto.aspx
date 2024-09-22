@@ -11,7 +11,6 @@
             </div>
         </div>
 
-        <button id="btn-editar" type="button" class="btn btn-primary btn-block">Editar</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {

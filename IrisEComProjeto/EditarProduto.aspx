@@ -12,7 +12,7 @@
 <body>
     <div class="container m-5">
     <form id="editProduto">
-        <div class="container mt-4">
+        <div class="container mt-4 col-10">
 
             <div class="form-group">
                 <label for="id">Id:</label>

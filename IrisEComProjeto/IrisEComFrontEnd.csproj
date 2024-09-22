@@ -239,6 +239,8 @@
     <Content Include="EditarUsuario.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="ListaCategoria.aspx" />
+    <Content Include="ListaProduto.aspx" />
     <Content Include="Produto.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -268,6 +270,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Scripts\popper.min.js" />
     <Content Include="Usuarios.aspx" />
     <Content Include="CadUsuario.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
@@ -371,6 +374,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCategoria.aspx.cs">
+      <DependentUpon>ListaCategoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaCategoria.aspx.designer.cs">
+      <DependentUpon>ListaCategoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProduto.aspx.cs">
+      <DependentUpon>ListaProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaProduto.aspx.designer.cs">
+      <DependentUpon>ListaProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Produto.aspx.cs">
       <DependentUpon>Produto.aspx</DependentUpon>
