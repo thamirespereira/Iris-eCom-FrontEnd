@@ -30,8 +30,12 @@
         <br>
         <br>
         <br>
+        <br>
+        <br />   
         <div class="mt-5">
         <div class="container mt-5">
+            <h3 class="display-5">Produtos recentes</h3>
+            <hr />
             <div id="produtos" class="row mt-5">
 
             </div>
@@ -49,12 +53,13 @@
                 var produtos = $('#produtos');
                 data.forEach(function (produto) {
                     var produtoItem = '<div class="col-md-4 produtoItem">' +
-                        '<div class="card">' +
+                        '<div class="card shadow-sm p-3 mb-5 bg-white rounded">' +
                         '<img src="' + produto.imagem + '" class="card-img-top" alt="' + produto.nome + '">' +
                         '<div class="card-body">' +
                         '<h5 class="card-title"><a href="Produto.aspx?id=' + produto.id + '">' + produto.nome + '</a></h5>' +
-                        '<p class="card-text">Preço: R$ ' + produto.preco.toFixed(2) + '</p>' +
-                        '<p class="card-text">' + produto.descricao + '</p>' +
+                        '<p class="card-text">R$ ' + produto.preco.toFixed(2) + '</p>' +
+                        '<p class="card-text">12x sem juros</p>' +
+                        '<button class="btn btn-outline-dark btn-block"><a href="EmConstrucao.aspx">Comprar</a></button>' +
                         '</div>' +
                         '</div>' +
                         '</div>';

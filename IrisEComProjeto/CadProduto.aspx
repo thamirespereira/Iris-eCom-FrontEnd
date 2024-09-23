@@ -11,42 +11,42 @@
 </head>
 <body>
     <form id="cadProduto"> 
-        <div class="container mt-4">
+        <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
             <h2 class="mb-4">Cadastro produto</h2>
             <div class="form-group">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" class="form-control"/>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o nome do produto"/>
             </div>
             <div class="form-group">
                 <label for="preco">Preço:</label>
-                <input type="number" id="preco" name="preco" class="form-control"/>
+                <input type="number" id="preco" name="preco" class="form-control" placeholder="Digite apenas números"/>
             </div>
             <div class="form-group">
                 <label for="descricao">Descrição:</label>
-                <input type="text" id="descricao" name="descricao" class="form-control"/>
+                <textarea type="text" rows="3" id="descricao" name="descricao" class="form-control" placeholder="Digite aqui a descrição do produto..."></textarea>
             </div>
             <div class="form-group">
                 <label for="infoTecnica">Informações Técnicas:</label>
-                <input type="text" id="infoTecnica" name="infoTecnica" class="form-control"/>
+                <textarea type="text" rows="5" id="infoTecnica" name="infoTecnica" class="form-control" placeholder="Digite aqui as informações técnicas do produto..."></textarea>
             </div>
             <div class="form-group">
                 <label for="quantidade">Quantidade disponível:</label>
-                <input type="text" id="quantidade" name="quantidade" class="form-control"/>
+                <input type="number" id="quantidade" name="quantidade" class="form-control" placeholder="Digite apenas números"/>
             </div>
             <div class="form-group">
                 <label for="imagem">Imagem:</label>
-                <input type="text" id="imagem" name="imagem" class="form-control"/>
+                <input type="text" id="imagem" name="imagem" class="form-control" placeholder="Informe a url da imagem"/>
             </div>
             <div class="form-group">
                 <label for="categoriaId">Categoria:</label>
-                <input type="number" id="categoriaId" name="categoriaId" class="form-control"/>
+                <input type="number" id="categoriaId" name="categoriaId" class="form-control" placeholder="Digite o Id da categoria do produto"/>
             </div>
             <div class="form-group">
                 <label for="usuarioId">Usuário:</label>
-                <input type="number" id="usuarioId" name="usuarioId" class="form-control"/> 
+                <input type="number" id="usuarioId" name="usuarioId" class="form-control" placeholder="Digite o Id do usuário"/> 
             </div>
-            <button id="btn-salvar" type="submit" class="btn btn-primary btn-block">Salvar</button>
-            <button id="btn-voltar" type="button" class="btn btn-primary btn-block">Voltar</button>
+            <button id="btn-salvar" type="submit" class="btn btn-dark btn-block">Salvar</button>
+            <button id="btn-cancelar" type="button" class="btn btn-dark btn-block">Cancelar</button>
         </div>
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
@@ -78,8 +78,8 @@
                 });
 
             });
-            $('#btn-voltar').on('click', function () {
-                window.history.back();
+            $('#btn-cancelar').on('click', function () {
+                window.location.href = 'Default.aspx';
             });
 
         </script>

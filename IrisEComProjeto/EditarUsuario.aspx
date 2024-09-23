@@ -10,56 +10,84 @@
 </head>
 <body>
     <form id="editUser">
-    <div class="card">
-    <h2 class="mb-4">Editar dados do cliente</h2>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+    <h2 class="mb-4">Editar Usuário</h2>
 
     <div class="form-group">
         <label for="id">ID:</label>
-        <input type="number" id="id" name="id" class="form-control"/>
+        <input type="number" id="id" name="id" class="form-control" placeholder="Digite o Id do usuário"/>
     </div>
     <div class="form-group">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" class="form-control"/>
+        <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o seu nome"/>
     </div>
 
     <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="form-control"/>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Digite o seu email"/>
     </div>
 
     <div class="form-group">
         <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" class="form-control"/>
+        <input type="password" id="senha" name="senha" class="form-control" placeholder="Digite a sua senha"/>
     </div>
 
     <div class="form-group">
         <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" class="form-control"/>
+        <input type="text" id="cep" name="cep" class="form-control" placeholder="Digite apenas números"/>
     </div>
 
     <div class="form-group">
         <label for="endereco">Endereco:</label>
-        <input type="text" id="endereco" name="endereco" class="form-control"/>
+        <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Digite o seu endereço"/>
     </div>
 
     <div class="form-group">
         <label for="bairro">Bairro:</label>
-        <input type="text" id="bairro" name="bairro" class="form-control"/>
+        <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Digite o seu bairro"/>
     </div>
 
     <div class="form-group">
         <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" class="form-control"/>
+        <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Digite a sua cidade"/>
     </div>
 
     <div class="form-group">
-        <label for="uf">UF:</label>
-        <input type="text" id="uf" name="uf" class="form-control"/>
+    <label for="uf">UF:</label>
+    <select id="uf" name="uf" class="form-select form-control">
+        <option selected>Selecione o seu estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select>
     </div>
 
     <div class="form-group">
         <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" class="form-control"/>
+        <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Digite apenas números"/>
     </div>
 
     <div class="form-group">
@@ -69,11 +97,11 @@
 
     <div class="form-group">
         <label for="imagem">Imagem:</label>
-        <input type="text" id="imagem" name="imagem" class="form-control"/>
+        <input type="text" id="imagem" name="imagem" class="form-control" placeholder="Informe a url da sua foto"/>
     </div>
 
-    <button id="button" type="submit" class="btn btn-primary btn-block">Salvar</button>
-    <button id="btn-voltar" type="button" class=" btn btn-primary btn-block">Voltar</button>
+    <button id="button" type="submit" class="btn btn-dark btn-block">Salvar</button>
+    <button id="btn-cancelar" type="button" class=" btn btn-dark btn-block">Cancelar</button>
 
     </div>
 
@@ -134,8 +162,8 @@
                     console.error('Erro ao editar usuário:', error);
                 });
         });
-        document.getElementById('btn-voltar').addEventListener('click', function () {
-            window.history.back();
+        $('#btn-cancelar').on('click', function () {
+            window.location.href = 'Default.aspx';
         });
     });
 

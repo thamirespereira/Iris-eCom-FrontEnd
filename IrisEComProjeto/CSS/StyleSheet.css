@@ -71,23 +71,3 @@
         color: #666;
     }
 
-.btn-voltar {
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
-    font-size: 14px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-voltar i {
-    margin-right: 5px;
-}
-
-.btn-voltar:hover {
-    background-color: #0056b3;
-}

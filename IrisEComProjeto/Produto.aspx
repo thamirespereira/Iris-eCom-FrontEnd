@@ -5,13 +5,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="StyleSheet.css" rel="stylesheet"/>
     <main>
-        <div class="container">
+        <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
             <div id="detalhes" class="prodDetalhes">
         
             </div>
         </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
         function getParameterByName(nome) {
@@ -34,10 +34,13 @@
                     var productDetails = $('#detalhes');
                     var productContent = '<img src="' + produto.imagem + '" alt="' + produto.nome + '">' +
                         '<h3>' + produto.nome + '</h3>' +
-                        '<p class="preco">R$ ' + produto.preco.toFixed(2) + '</p>' +
-                        '<p class="descricao">' + produto.descricao + '</p>';
-                        '<p class="quantidade">' + produto.quantidade + '</p>';
-                        '<p class="info">' + produto.infoTecnica + '</p>';
+                        '<p class="card-text bold">R$ ' + produto.preco.toFixed(2) + '</p>' +
+                        '<p class="card-text">12x sem juros</p>' +
+                        '<button class="btn btn-outline-dark"><a href="EmConstrucao.aspx">Comprar</a></button>' +
+                        '<h4>Detalhes do produto</h4>' +
+                        '<p class="card-text">' + produto.descricao + '</p>'; +
+                        '<h4>Informações técnicas</h4>'
+                        '<p class="card-text">' + produto.infoTecnica + '</p>';
                     productDetails.html(productContent);
                 },
                 error: function (error) {

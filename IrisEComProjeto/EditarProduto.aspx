@@ -12,53 +12,53 @@
 <body>
     <div class="container m-5">
     <form id="editProduto">
-        <div class="container mt-4 col-10">
+        <div class="container mt-4 col-10 shadow p-3 mb-5 bg-white rounded">
 
             <div class="form-group">
                 <label for="id">Id:</label>
-                <input id="id" name="id" type="number" class="form-control"/>
+                <input id="id" name="id" type="number" class="form-control" placeholder="Digite o id do produto"/>
             </div>
             <div class="form-group">
                 <label for="nome">Nome:</label>
-                <input id="nome" name="nome" type="text" class="form-control"/>
+                <input id="nome" name="nome" type="text" class="form-control" placeholder="Digite o nome do produto"/>
             </div>
+
+             <div class="form-group">
+                 <label for="preco">Preço:</label>
+                 <input id="preco" name="preco" type="number" class="form-control" placeholder="Digite apenas números"/>
+             </div>
 
             <div class="form-group">
                 <label for="descricao">Descrição:</label>
-                <input id="descricao" name="descricao" type="text" class="form-control"/>
-            </div>
-
-            <div class="form-group">
-                <label for="preco">Preço:</label>
-                <input id="preco" name="preco" type="number" class="form-control"/>
+                <textarea id="descricao" name="descricao" type="text" class="form-control" placeholder="Digite aqui a descrição do produto..."></textarea>
             </div>
 
             <div class="form-group">
                 <label for="infoTecnica">Informações Técnicas:</label>
-                <input id="infoTecnica" name="infoTecnica" type="text" class="form-control"/>
+                <textarea id="infoTecnica" name="infoTecnica" type="text" class="form-control" placeholder="Digite aqui as informações técnicas do produto..."></textarea>
             </div>
 
             <div>
                 <label for="quantidade">Quantidade disponível:</label>
-                <input id="quantidade" name="quantidade" type="text" class="form-control"/>
+                <input id="quantidade" name="quantidade" type="text" class="form-control" placeholder="Digite apenas números"/>
             </div>
             <div class="form-group">
                 <label for="imagem">Imagem:</label>
-                <input id="imagem" name="imagem" type="text" class="form-control"/>
+                <input id="imagem" name="imagem" type="text" class="form-control" placeholder="Informe a url da imagem"/>
             </div>
 
             <div class="form-group">
                 <label for="categoriaId">Categoria:</label>
-                <input id="categoriaId" name="categoriaId" type="number" class="form-control"/>
+                <input id="categoriaId" name="categoriaId" type="number" class="form-control" placeholder="Digite o Id da categoria do produto"/>
             </div>
 
             <div class="form-group">
                 <label for="usuarioId">Usuário:</label>
-                <input id="usuarioId" name="usuarioId" type="number" class="form-control"/>
+                <input id="usuarioId" name="usuarioId" type="number" class="form-control" placeholder="Digite o Id do usuário"/>
             </div>
 
-            <button id="btn-salvar" type="submit" class="btn btn-primary btn-block">Salvar</button>
-            <button id="btn-voltar" type="button" class=" btn btn-primary btn-block">Voltar</button>
+            <button id="btn-salvar" type="submit" class="btn btn-dark btn-block">Salvar</button>
+            <button id="btn-cancelar" type="button" class=" btn btn-dark btn-block">Voltar</button>
 
         </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -92,8 +92,8 @@
         });
         
     });
-    $('#btn-voltar').on('click', function () {
-        window.history.back();
+    $('#btn-cancelar').on('click', function () {
+        window.location.href = 'Default.aspx';
     });
 
 </script>

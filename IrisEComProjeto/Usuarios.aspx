@@ -26,7 +26,7 @@
            
         </tbody>
     </table>
-        <button id="editButton" type="button" class="btn btn-primary btn-block">Editar Cliente</button>
+        <button id="editButton" type="button" class="btn btn-dark btn-block">Editar</button>
 </div>
 
     <!-- Conexão com a api -->

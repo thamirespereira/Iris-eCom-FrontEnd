@@ -237,6 +237,7 @@
     <Content Include="EditarCategoria.aspx" />
     <Content Include="EditarProduto.aspx" />
     <Content Include="EditarUsuario.aspx" />
+    <Content Include="EmConstrucao.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ListaCategoria.aspx" />
@@ -273,6 +274,7 @@
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Usuarios.aspx" />
     <Content Include="CadUsuario.aspx" />
+    <Content Include="Imagens\site-em-desenvolvimento-site-em-construcao_106788-2280.avif" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -371,6 +373,13 @@
     </Compile>
     <Compile Include="EditarUsuario.aspx.designer.cs">
       <DependentUpon>EditarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmConstrucao.aspx.cs">
+      <DependentUpon>EmConstrucao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmConstrucao.aspx.designer.cs">
+      <DependentUpon>EmConstrucao.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

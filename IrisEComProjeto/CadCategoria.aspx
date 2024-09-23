@@ -11,18 +11,18 @@
 </head>
 <body>
     <form id="cadCategoria">
-        <div class="container mt-4">
+        <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
             <h2 class="mb-4">Cadastro produto</h2>
             <div class="form-group">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" class="form-control"/>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o nome da categoria"/>
             </div>
             <div class="form-group">
                 <label for="imagem">Imagem:</label>
-                <input type="text" id="imagem" name="imagem" class="form-control"/>
+                <input type="text" id="imagem" name="imagem" class="form-control" placeholder="Informe a url da imagem"/>
             </div>
-                <button id="btn-salvar" type="submit" class="btn btn-primary btn-block">Salvar</button>
-                <button id="btn-voltar" type="button" class="btn btn-primary btn-block">Voltar</button>
+                <button id="btn-salvar" type="submit" class="btn btn-dark btn-block">Salvar</button>
+                <button id="btn-cancelar" type="button" class="btn btn-dark btn-block">Cancelar</button>
         </div>
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
@@ -49,7 +49,7 @@
                 });
             });
 
-            $('#btn-voltar').on('click', function () {
+            $('#btn-cancelar').on('click', function () {
                 window.location.href = 'Default.aspx';
             });
         </script>
