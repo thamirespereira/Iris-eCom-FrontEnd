@@ -39,7 +39,7 @@
                                 '<h5 class="card-title"><a href="Produto.aspx?id=' + produto.id + '" >' + produto.nome + '</a></h5>' +
                                 '<p class="card-text">R$ ' + produto.preco.toFixed(2) + '</p>' +
                                 '<p class="card-text">12x sem juros</p>' +
-                                '<button class="btn btn-warning btn-block"><a href="EmConstrucao.aspx">Comprar</a></button>' +
+                                '<button class="btn btn-outline-dark btn-block"><a href="EmConstrucao.aspx">Comprar</a></button>' +
                                 '</div>' +
                                 '</div>' +
                                 '</div>';

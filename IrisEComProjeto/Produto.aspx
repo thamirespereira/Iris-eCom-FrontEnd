@@ -5,7 +5,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="StyleSheet.css" rel="stylesheet"/>
     <main>
-        <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="container mt-4 ">
             <div id="detalhes" class="prodDetalhes">
         
             </div>
@@ -32,15 +32,17 @@
                 method: 'GET',
                 success: function (produto) {
                     var productDetails = $('#detalhes');
-                    var productContent = '<img src="' + produto.imagem + '" alt="' + produto.nome + '">' +
+                    var productContent = '<div class="card shadow p-3 mb-5 bg-white rounded">' +
+                        '<img src="' + produto.imagem + '" alt="' + produto.nome + '">' +
                         '<h3>' + produto.nome + '</h3>' +
                         '<p class="card-text bold">R$ ' + produto.preco.toFixed(2) + '</p>' +
                         '<p class="card-text">12x sem juros</p>' +
-                        '<button class="btn btn-outline-dark"><a href="EmConstrucao.aspx">Comprar</a></button>' +
+                        '<button class="btn btn-outline-dark btn-block"><a href="EmConstrucao.aspx">Comprar</a></button>' +
                         '<h4>Detalhes do produto</h4>' +
                         '<p class="card-text">' + produto.descricao + '</p>'; +
-                        '<h4>Informações técnicas</h4>'
-                        '<p class="card-text">' + produto.infoTecnica + '</p>';
+                        '<h4>Informações técnicas</h4>' +
+                        '<p class="card-text">' + produto.infoTecnica + '</p>'; +
+                        '</div > ';
                     productDetails.html(productContent);
                 },
                 error: function (error) {
