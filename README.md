@@ -19,7 +19,10 @@
 </ul>
 
 <h2>Instalação</h2>
-<strong>1. Clone o repositório</strong>
+<strong>1. Siga o passo a passo para a instalação da nossa API:</strong>
+<li><a href="https://github.com/thamirespereira/Iris-eCom">Íris eCom API</a></li>
+<br>
+<strong>2. Clone o repositório</strong>
 <pre><code>
   git clone https://github.com/thamirespereira/Iris-eCom-FrontEnd.git
 </code></pre>
