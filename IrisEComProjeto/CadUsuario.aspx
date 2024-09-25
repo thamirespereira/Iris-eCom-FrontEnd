@@ -28,7 +28,7 @@
 
         <div class="form-group">
         <label for="senha">Senha:</label>
-        <input type="text" id="senha" name="senha" class="form-control" placeholder="Crie uma senha com no mínimo 8 caracteres"/>
+        <input type="password" id="senha" name="senha" class="form-control" placeholder="Crie uma senha com no mínimo 8 caracteres" autocomplete="off"/>
         </div>
 
         <div class="form-group">
@@ -86,7 +86,7 @@
 
         <div class="form-group">
         <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Digite apenas números"/>
+        <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Digite apenas números" autocomplete="off"/>
         </div>
 
         <div class="form-group">
