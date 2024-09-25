@@ -37,7 +37,7 @@
         </div>
 
         <div class="form-group">
-        <label for="endereco">Endereço:</label>
+        <label for="endereco">Endereco:</label>
         <input type="text" id="endereco" name="endereco" class="form-control" placeholder="Digite o seu endereço"/>
         </div>
 
@@ -127,7 +127,7 @@
                 Email: email,
                 Senha: senha,
                 CEP: cep,
-                Endereço: endereco,
+                Endereco: endereco,
                 Bairro: bairro,
                 Cidade: cidade,
                 UF: uf,
